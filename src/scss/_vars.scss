@@ -1,0 +1,22 @@
+// если вы хотите использовать sass-переменные - удалите root
+:root {
+  // background color
+  --fon-color: #f9f7f4;
+
+  // white and black
+  --light-color: #ffffff;
+  --dark-color: #000000;
+
+  // other colors
+  --lights-color: #e0f0e5;
+  --blond-color: #f1f3f2;
+  --blonds-color: #d9dfdb;
+  --orange-color: #efa501;
+  --yellow-color: #f8e6be;
+  --green-color: #286562;
+  --lettuce-color: #3b7e7b;
+  --lettuces-color: #627f7e;
+  --gray-color: #a6a6a6;
+  --grays-color: #f4f0e9;
+  --grays-transparent: rgb(244, 240, 233, 0.6);
+}

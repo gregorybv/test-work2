@@ -1,0 +1,20 @@
+//=== базовые подключения ===//
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+//=== подключение секций страницы ===//
+// @import "./components/header.scss";
+@import "./components/hero";
+// @import "./components/footer.scss";
+
+//=== подключение готовых компонентов ===//
+// @import "./components/navbar.scss";
+// @import "./components/navbar_hamburger.scss";
+// @import "./components/form.scss";
+// @import "./components/gallery.scss";
+// @import "./components/register-form.scss";
+// @import "./components/slider.scss";
+@import "./components/modalWindow.scss";
+

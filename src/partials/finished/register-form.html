@@ -1,0 +1,32 @@
+<form action="" id="registerForm">
+  <img src="../../assets/svg/logoGB.svg" alt="close" id="closeIcon">
+  <h3>Регистрация</h3>
+  <p>Шаг первый</p>
+  <section id="firstStep">
+      <input type="text" placeholder="Имя" id="firstName" class="firstStepInput">
+      <input type="text" placeholder="Фамилия" id="lastName" class="firstStepInput">
+      <input type="text" placeholder="E-mail" id="email" class="firstStepInput">
+      <input type="text" placeholder="Телефон" id="phoneNumber" class="firstStepInput tel">
+      <button id="nextPage" type="button">Продолжить</button>
+  </section>
+  <section id="secondStep" class="hidden">
+      <button type="button" id="previousPage">Назад</button>
+      <input type="text" placeholder="Город" id="city" class="secondStepInput">
+      <div id="radioGender">
+          <input label="Я - женщина" type="radio" id="female" name="gender" value="female" checked>
+          <input label="Я - мужчина" type="radio" id="male" name="gender" value="male">
+      </div>
+      <div class="checkboxes">
+          <input type="checkbox" id="" name="">
+          <label for=""><p>Подтверждаю, что мне исполнилось 18 лет</p></label></div>
+      <div class="checkboxes">
+          <input type="checkbox" id="" name="">
+          <label for=""><p>Подтверждаю согласие на обработку персональных данных, в соответствии с Политикой персональных данных ООО «Компания»</p></label>
+      </div>
+      <div class="checkboxes">
+          <input type="checkbox" id="" name="">
+          <label for=""><p>Подтверждаю согласие на получение рекламной информации от ООО «Компания» и ООО «СРМ Солюшнс»</p></label>
+      </div>
+      <button id="submit" type="button">Зарегистрироваться</button>
+  </section>
+</form>

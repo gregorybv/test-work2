@@ -1,0 +1,244 @@
+<section class="hero">
+  <div class="container">
+    <div class="hero__from">
+      <nav class="menu">
+        <img class="menu__logo" src="./assets/image/Logo.png" alt="Logo" />
+        <ul class="menu__items">
+          <li class="menu__item">
+            <img class="menu__img" src="./assets/svg/дом.svg" alt="дом" />
+            <p class="menu__text">Главная</p>
+          </li>
+          <li class="menu__item">
+            <img
+              class="menu__img"
+              src="./assets/svg/тележка.svg"
+              alt="тележка"
+            />
+            <p class="menu__text">Мои магазины</p>
+          </li>
+          <li class="menu__item">
+            <img
+              class="menu__img"
+              src="./assets/svg/мегафон.svg"
+              alt="мегафон"
+            />
+            <p class="menu__text">Промоматериалы</p>
+          </li>
+          <li class="menu__item">
+            <img
+              class="menu__img"
+              src="./assets/svg/диаграмма.svg"
+              alt="диаграмма"
+            />
+            <p class="menu__text">Статистика</p>
+          </li>
+          <li class="menu__item">
+            <img
+              class="menu__img"
+              src="./assets/svg/кошелек.svg"
+              alt="кошелек"
+            />
+            <p class="menu__text">Баланс</p>
+          </li>
+          <li class="menu__item">
+            <img class="menu__img" src="./assets/svg/аватар.svg" alt="аватар" />
+            <p class="menu__text">Персональные данные</p>
+          </li>
+          <li class="menu__item">
+            <img class="menu__img" src="./assets/svg/вопрос.svg" alt="вопрос" />
+            <p class="menu__text">FAQ</p>
+          </li>
+          <li class="menu__item">
+            <img
+              class="menu__img"
+              src="./assets/svg/гарнитура.svg"
+              alt="гарнитура"
+            />
+            <p class="menu__text">Техподдержка</p>
+          </li>
+          <li class="menu__item">
+            <img class="menu__img" src="./assets/svg/выход.svg" alt="выход" />
+            <p class="menu__text">Выход</p>
+          </li>
+        </ul>
+      </nav>
+      <div class="content">
+        <div class="content__hat">
+          <p class="content__left">Главная > Мои магазины</p>
+          <div class="content__right">
+            <img
+              class="content__right_img"
+              src="./assets/svg/messege.svg"
+              alt="messege"
+            />
+            <div class="content__men">
+              <img
+                class="content__men_img"
+                src="./assets/image/фото.png"
+                alt="фото"
+              />
+              <p class="content__men_text">Максим Добжанский</p>
+            </div>
+          </div>
+        </div>
+        <div class="content__item">
+          <button class="content__button button-res" id="myBtn">
+            <span class="content__button_plus">+</span>
+            <p class="content__button_text">Создать свой магазин</p>
+          </button>
+
+          <h1 class="content__title">Управление магазинами</h1>
+          <div class="block">
+            <div class="block__lists">
+              <ul class="block__name">
+                <li class="block__title">№</li>
+                <li class="block__title">Название</li>
+                <li class="block__title hide">Адрес</li>
+                <li class="block__title">Действие</li>
+              </ul>
+
+              <ul class="block__list">
+                <li class="block__text number">12345</li>
+                <li class="block__text name">Дипломная работа</li>
+                <li class="block__text hide">http://www.work5.ru/services</li>
+                <div class="block__buttons">
+                  <div class="block__button">
+                    <button
+                      type="button"
+                      class="block__btn button-res button-red"
+                    >
+                      <img
+                        class="block__button_img"
+                        src="./assets/svg/карандаш 1.svg"
+                        alt="карандаш"
+                      />
+                      <p class="block__button_text">Редактировать</p>
+                    </button>
+                    <button
+                      type="button"
+                      class="block__btn button-res gray dell"
+                    >
+                      <img
+                        class="block__button_img"
+                        src="./assets/svg/cansel.svg"
+                        alt="cansel"
+                      />
+                      <p class="block__button_text dell">Удалить</p>
+                    </button>
+                  </div>
+                </div>
+              </ul>
+
+              <!-- Modal window -->
+              <div id="myModal" class="modal">
+                <div class="modal__content">
+                  <div class="modal__hat">
+                    <h2>Создать магазин</h2>
+                    <span class="close">&times;</span>
+                  </div>
+                  <form class="input">
+                    <label for="selectId" class="input__label">
+                      Шаблон
+                      <select class="input__select" name="select" id="selectId">
+                        <option class="input__option" value="Стандартный" id="optionId">
+                          Стандартный
+                        </option>
+                        <option class="input__option" value="текст" id="optionId">
+                          текст
+                        </option>
+                        <option class="input__option" value="текст" id="optionId">
+                          текст
+                        </option>
+                      </select>
+                    </label>
+                    <label for="selectId" class="input__label">
+                      Цветовая схема
+                      <select class="input__select" name="select" id="selectId">
+                        <option class="input__option" value="Стандартный" id="optionId2">
+                          Классическая
+                        </option>
+                        <option class="input__option" value="текст" id="optionId2">
+                          текст
+                        </option>
+                        <option class="input__option" value="текст" id="optionId2">
+                          текст
+                        </option>
+                      </select>
+                    </label>
+
+                    <div class="domen">
+                      <label class="domen__label">Домен</label>
+                      <div class="domen__content">
+                        <input
+                          type="text"
+                          id="domen"
+                          placeholder="Например: ivangrozniy"
+                        />
+                        <button type="button" class="btn">.work5.ru</button>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="warning">
+                    <img
+                      src="../assets/svg/предупреждение.svg"
+                      alt="предупреждение"
+                      class="warning__img"
+                    />
+                    <p class="warning__text">
+                      В названии домена разрешены латиница и “-”, запрещается
+                      использовать словосочетание Work 5. После создания
+                      магазина Вы сможете прикрутить свой домен (например
+                      ivangrozniy.ru). Подробнее по
+                      <a class="warning__link" href="#">ссылке</a>
+                    </p>
+                  </div>
+                  <div class="buttons">
+                    <button type="reset" class="buttons__cancel button-res">
+                      Отмена
+                    </button>
+                    <button type="submit" class="buttons__create button-res">
+                      Создать
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal window -->
+
+              <ul class="block__list">
+                <li class="block__text number">12345</li>
+                <li class="block__text name">Дипломная работа</li>
+                <li class="block__text hide">http://www.work5.ru/services</li>
+                <div class="block__buttons">
+                  <div class="block__button">
+                    <button
+                      type="button"
+                      class="block__btn button-res button-red"
+                    >
+                      <img
+                        class="block__button_img"
+                        src="./assets/svg/карандаш 1.svg"
+                        alt="карандаш"
+                      />
+                      <p class="block__button_text">Редактировать</p>
+                    </button>
+                    <button
+                      type="button"
+                      class="block__btn button-res gray dell"
+                    >
+                      <img
+                        class="block__button_img"
+                        src="./assets/svg/cansel.svg"
+                        alt="cansel"
+                      />
+                      <p class="block__button_text dell">Удалить</p>
+                    </button>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,122 @@
+<form name="form" class="forma__form" action="#">
+  <div class="forma__column">
+    <div class="forma__item">
+      <label class="forma__label">
+        Name
+        <input type="text" placeholder="Enter your name" class="forma__input" />
+      </label>
+    </div>
+    <div class="forma__item">
+      <label class="forma__label"
+        >Text
+        <select class="forma__input">
+          <option value="Text" class="forma__input">Text = placeholder</option>
+          <option value="Text" class="forma__input">Text</option>
+          <option value="Text" class="forma__input">Text</option>
+          <option value="Text" class="forma__input">Text</option>
+        </select>
+      </label>
+    </div>
+  </div>
+  <div class="forma__column">
+    <div class="forma__item">
+      <label class="forma__label">
+        Email
+        <input
+          type="email"
+          class="forma__input"
+          placeholder="example@mail.com"
+          required
+        />
+      </label>
+    </div>
+    <div class="forma__item">
+      <label class="forma__label">
+        Phone
+        <input
+          type="tel"
+          name="tel"
+          class="forma__input"
+          placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _"
+          required
+          id="tel"
+          minlength="6"
+          maxlength="12"
+        />
+      </label>
+    </div>
+  </div>
+  <div class="forma__column">
+    <div class="forma__item">
+      <label class="forma__label">
+        Date from
+        <input
+          type="text"
+          class="forma__input"
+          placeholder="ДД.ММ.ГГГГ"
+          required
+        />
+      </label>
+    </div>
+    <div class="forma__item">
+      <label class="forma__label">
+        Date to
+        <input
+          type="text"
+          class="forma__input"
+          placeholder="ДД.ММ.ГГГГ"
+          required
+        />
+      </label>
+    </div>
+  </div>
+  <div class="forma__comments">
+    <label class="forma__label"
+      >Comment
+      <textarea
+        class="forma__comment"
+        name=""
+        id=""
+        cols="133"
+        rows="7"
+      ></textarea>
+    </label>
+  </div>
+  <div class="forma__age">
+    <label class="forma__label">Are you 18 years old?</label>
+    <div class="forma__radios">
+      <div class="forma__radio">
+        <label class="forma__labels">
+          Yes
+          <input
+            type="radio"
+            class="forma__hiding"
+            name="forma__radio"
+            value="yes"
+          />
+          <span class="forma__span"></span>
+        </label>
+      </div>
+      <div class="forma__radio">
+        <label class="forma__labels">
+          No
+          <input
+            type="radio"
+            class="forma__hiding"
+            name="forma__radio"
+            value="no"
+          />
+          <span class="forma__span"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="forma__licenses">
+    <label class="forma__license">
+      <input type="checkbox" class="forma__license_input" />
+      <span class="forma__checkbox"></span>
+      By clicking the button, I accept the following terms and conditions
+      <a href="#" class="forma__license_link">License agreement</a>
+    </label>
+  </div>
+</form>

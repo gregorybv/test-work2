@@ -1,0 +1,75 @@
+.slider {
+  margin: 100px auto 0px;
+
+  &__form {
+    width: 1280px;
+    max-width: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: both;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    width: max-content;
+  }
+
+  &__item {
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to top, #aec0ce, #ececf2);
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 5px;
+    scroll-snap-align: start;
+
+    @media screen and (max-width: 1024px) {
+      width: calc(33.3vw - 20px);
+    }
+
+    @media screen and (max-width: 768px) {
+      width: calc(50vw - 20px);
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 10px 15px #7e878d;
+  }
+
+  &__direction {
+    text-align: center;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__button {
+    font-family: cursive;
+    font-weight: bold;
+    background-color: #c1bbbb44;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin: 0 10px;
+
+    &:hover {
+      background-color: #9f9b9b;
+    }
+  }
+}
